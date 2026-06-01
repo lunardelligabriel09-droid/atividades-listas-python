@@ -1,0 +1,29 @@
+
+notas = [7.5, 8.0, 6.0, 9.5, 5.5, 8.5, 7.0, 9.0, 6.5, 8.0]
+nomes = ['Carlos', 'Ana', 'Bruno', 'Ana', 'Diego', 'Ana', 'Bruno']
+
+media = sum(notas) / len(notas)
+print(f"Média: {media:.2f}")
+
+maior = max(notas)
+menor = min(notas)
+acima_media = 0
+
+for nota in notas:
+    if nota > media:
+        acima_media += 1
+
+print("Maior nota:", maior)
+print("Menor nota:", menor)
+print("Alunos acima da média:", acima_media)
+
+print("Ana aparece:", nomes.count('Ana'), "vezes")
+print("Primeiro índice de Bruno:", nomes.index('Bruno'))
+
+nomes_sem_repeticao = []
+
+for nome in nomes:
+    if nome not in nomes_sem_repeticao:
+        nomes_sem_repeticao.append(nome)
+
+print(nomes_sem_repeticao)

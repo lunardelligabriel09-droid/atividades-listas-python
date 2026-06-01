@@ -1,0 +1,8 @@
+
+letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+print(letras[:4])
+print(letras[2:7])
+print(letras[-3:])
+print(letras[::-1])
+print(letras[::2])
